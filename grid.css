@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------- */
+
+
+body{
+    height: 100vh;
+    background: gold;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 
+    'h'
+    'm'
+    'm'
+    'm'
+    'f';
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+header{
+
+    grid-area: h;
+    background-color: blueviolet;
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+
+}
+
+header nav{
+
+
+}
+
+
+
+/* ---------------------------------- */
+
+
+
+main{
+
+    grid-area: m;
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+
+
+
+
+}
+
+article{
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    's_1 a_1'
+    's_2 a_2'
+    's_3  . '; 
+
+    background: rgb(133, 175, 16);
+    border: 5px solid gray;
+
+
+}
+aside{
+    background-color: coral;
+    border: solid 5px rgb(223, 17, 212);
+}
+
+section{
+    border: 5px solid rgb(252, 4, 4);
+}
+
+#Sec_1{
+    grid-area: s_1;
+
+}
+
+#Sec_2{
+    grid-area: s_2;
+
+
+    
+}
+
+#Sec_3{
+    grid-area: s_3;
+
+
+    
+}
+
+#Aside_1{
+    grid-area: a_1;
+
+
+
+}
+
+#Aside_2{
+    grid-area: a_2;
+
+
+    
+}
+
+
+
+
+/* ---------------------------------- */
+
+
+footer{
+
+    grid-area: f;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'n_1 n_2';
+    border: 5px solid rgb(247, 5, 174);
+    margin-left: 5px;
+
+
+
+
+
+
+}
+
+#nav_1{
+    grid-area: n_1;
+    border: 5px solid green;
+
+
+
+
+}
+
+#nav_2{
+    grid-area: n_2;
+    border: 5px solid blue;
+
+
+
+    
+}
